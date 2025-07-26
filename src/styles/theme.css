@@ -1,0 +1,130 @@
+:root[data-theme="light"] {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #1040de;
+  --primary-color-rgb: 16, 64, 222;
+  --secondary-color: #666666;
+  --accent-color: #f5f5f5;
+  --hover-color: #0830a5;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --overlay-bg: rgba(0, 0, 0, 0.05);
+  --border-color: #e0e0e0;
+  --section-bg: #ffffff;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --primary-color: #1ade10;
+  --primary-color-rgb: 26, 222, 16;
+  --secondary-color: #b3b3b3;
+  --accent-color: #1e1e1e;
+  --hover-color: #15b50d;
+  --card-bg: #1e1e1e;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+  --overlay-bg: rgba(255, 255, 255, 0.05);
+  --border-color: #333333;
+  --section-bg: #1a1a1a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  cursor: none;
+}
+
+/* Apply theme to common elements */
+.card,
+.skill-card,
+.project-card,
+.blog-card,
+.implementation-item,
+.certification-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.highlights-section,
+.skills-section,
+.dream-progress-section,
+.connect-section,
+.contact-section {
+  background-color: var(--section-bg);
+  color: var(--text-color);
+}
+
+/* Theme-aware text colors */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+/* Theme-aware buttons */
+.button.dark {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+}
+
+[data-theme="dark"] .button.dark {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+}
+
+/* Theme transitions */
+* {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Custom cursor */
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s, border-color 0.3s;
+}
+
+.cursor.hover {
+  transform: scale(1.5);
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+/* Progress bar colors */
+.progress-bar[data-progress="25"],
+.progress-bar[data-progress="50"] {
+  --progress-color: #ff4d4d;
+  --progress-color-light: #ff6666;
+}
+
+.progress-bar[data-progress="75"] {
+  --progress-color: #ffa500;
+  --progress-color-light: #ffc04d;
+}
+
+.progress-bar[data-progress="100"] {
+  --progress-color: #2ecc71;
+  --progress-color-light: #27ae60;
+} 

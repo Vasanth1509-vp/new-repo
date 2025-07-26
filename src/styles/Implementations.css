@@ -1,0 +1,213 @@
+.implementations-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.implementations-container h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  animation: slideIn 0.5s ease-out;
+}
+
+.implementations-intro {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin-bottom: 3rem;
+  max-width: 800px;
+  line-height: 1.6;
+  animation: slideIn 0.5s ease-out 0.2s backwards;
+}
+
+.implementations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.implementation-item {
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.implementation-header {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: none;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.header-content {
+  flex: 1;
+}
+
+.implementation-header h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.company-info {
+  display: flex;
+  gap: 1rem;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+.duration {
+  padding-left: 1rem;
+  border-left: 2px solid var(--secondary-color);
+}
+
+.toggle-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.implementation-item.active .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.implementation-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 1.5rem;
+}
+
+.implementation-item.active .implementation-content {
+  max-height: 1000px;
+  padding-bottom: 1.5rem;
+}
+
+.description {
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.achievements {
+  margin-bottom: 1.5rem;
+}
+
+.achievements h4,
+.technologies h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements li {
+  color: var(--text-color);
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.achievements li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background-color: rgba(var(--primary-color-rgb), 0.1);
+  color: var(--primary-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  padding: 4rem;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  margin-top: 4rem;
+}
+
+.contact-section h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section p {
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .implementations-container {
+    padding: 1rem;
+  }
+
+  .implementation-header {
+    padding: 1rem;
+  }
+
+  .implementation-content {
+    padding: 0 1rem;
+  }
+
+  .implementation-item.active .implementation-content {
+    padding-bottom: 1rem;
+  }
+
+  .contact-section {
+    padding: 2rem;
+  }
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} 
