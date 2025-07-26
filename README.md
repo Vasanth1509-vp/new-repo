@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# VP's Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React, showcasing my ServiceNow development expertise and professional journey.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Modern and responsive design
+- Dark/Light theme support
+- Custom animations and transitions
+- ServiceNow Virtual Agent integration
+- Blog system with detailed posts
+- Project showcase
+- Implementation case studies
+- Certification display
+- Contact information with social links
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React
+- TypeScript
+- CSS3
+- React Router
+- Custom Hooks
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Pages
 
-### `npm test`
+1. Home - Landing page with introduction
+2. About - Personal biography and skills
+3. Projects - Portfolio of past projects
+4. Implementations - ServiceNow implementation case studies
+5. Certifications - Professional certifications
+6. Blogs - Technical blog posts
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup
 
-### `npm run build`
+```bash
+# Install dependencies
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Start development server
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Build for production
+npm run build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contact
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+For any inquiries, please reach out through the contact section on the website.
